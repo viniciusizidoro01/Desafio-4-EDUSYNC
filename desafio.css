@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter';
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 48px;
+    background-color:  #F8F9FA;
+    padding-top: 11px;
+    padding-left: 18px;
+    border-radius: 4px;
+}
+
+.cadastrarPacotes{
+    padding-top: 56px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #152536;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    max-width: 1084px;
+    display: flex;
+    flex-direction: column;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 57px;
+}
+
+.ladoEsquerdo{
+    display: flex;
+    flex-direction:column;
+    text-align: left;
+}
+
+.inputNome{
+    width: 589px;
+    height: 38px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+}
+
+label {
+font-size: 12px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.ladoDireito{
+    display: flex;
+    flex-direction:column;
+    text-align: left;
+    margin-left: 44px;
+}
+
+textarea {
+    width: 555px;
+    height: 161px;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#date {
+    width: 293px;
+    height: 38px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+}
+
+.botao{
+    padding-top: 58px;
+}
+
+.botaoCadastrar{
+    background: #8458FF;
+    border-radius: 4px;
+    border: #8458FF solid 2px;
+    width: 108px;
+    height: 39px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+}
+
+.rodape { 
+        background-color: #F6511D;
+        height: 200px;
+        width: 100%;
+        font-family: 'Inter';
+        margin-top: 973px;
+        display: flex;
+        justify-content: space-evenly;
+        color: aliceblue;
+        justify-content: center;
+        }
+
+        .linhaFundo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-left: 40px;
+            font-family: 'Roboto';
+        }
+        
+        .rodapeFundo {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+            margin-top: -64px;
+        }
+        
+        .linhaRodape {
+            border: 1px solid #FFFFFF;
+            height: 170px;
+            margin-top: 20px;
+        }

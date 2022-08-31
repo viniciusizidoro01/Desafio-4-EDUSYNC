@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncTur</title>
+    <link rel="stylesheet" href="desafio.css">
+</head>
+<body>
+
+    <header>
+        <h2>SyncTur</h2>
+    </header>
+    
+    <main>
+        <div class="parte1">
+            <h1 class="cadastrarPacotes">Cadastrar Pacotes</h1>
+
+            <div class="box1">
+
+                <div class="ladoEsquerdo">
+                    <h3>Pacote</h3>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="   Digite nome completo" class= "inputNome">
+                    </div>
+                    <div class="box2">
+                        <div class="statusPacote">
+                            <h3 class = "tituloStatus"> Status do Pacote<h3>
+                                <input type='radio' name="status" id="active" value=true>
+                                <label for="active" class="options">Ativo</label>
+                                <br>
+                                <input type="radio"  name="status" id="inactive" checked value=false>
+                                <label for="inctive" class="options">Inativo</label>
+                        </div>
+
+                        <div>
+                            <h3 class="dataViagem">Data de Viagem</h3>
+                            <br>
+                            <input placeholder="  Data" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ladoDireito">
+                    <h3>Descrição</h3>
+                    <br>
+                    <textarea name="descricao1" id="description" cols="30" rows="10" placeholder="Descrição do Pacote" class="textArea font"></textarea>
+                </div>
+
+            </div> 
+            <br>
+            <div class="botao">
+                <button class="botaoCadastrar">Cadastrar</button>
+            </div>
+        </div>
+        
+        <div class="pkgAPI">
+            <h3 id="pacoteAPI">Pacote</h3>
+            <p class="textoAPI">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="dataTrip">Data da viagem:</p>
+            <button type="submit">Editar</button>
+            <button type="submit">Excluir</button>
+        </div>
+        <br>
+        <div class="pkgAPI">
+            <h3 id="pacoteAPI">Pacote</h3>
+            <p class="textoAPI">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="dataTrip">Data da viagem:</p>
+            <button type="submit">Editar</button>
+            <button type="submit">Excluir</button>
+        </div>
+        <br>
+        <div class="pkgAPI">
+            <h3 id="pacoteAPI">Pacote</h3>
+            <p class="textoAPI">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="dataTrip">Data da viagem:</p>
+            <button type="submit">Editar</button>
+            <button type="submit">Excluir</button>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <h3 class="rodapeFundo">SyncTur</h3>
+        <div class="linhaRodape"></div>
+        <div class="linhaFundo">
+            <br>
+            <p id="p1"> Company Inc, 8901 Marmora Road, Glasspow, DO4 89GR</p>
+            <br>
+            <p id="p2"> Call us now toll free: (800)2345-6789</p>
+            <br>
+            <p id="p3"> Costumer support suporrt@demolink.org</p>
+            <br>
+            <p id="p4"> Skype: Sample-username</p>
+            <br>
+        </div>
+    </footer>
+
+</body>
+</html>
