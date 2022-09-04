@@ -1,3 +1,5 @@
+// declaração das variáveis 
+
 let inputNome = document.querySelector(".inputNome") as HTMLInputElement;
 let inputStatus = document.getElementsByName("status") as any;
 let inputData = document.querySelector(".data") as HTMLInputElement;
@@ -5,6 +7,7 @@ let inputTextArea = document.querySelector(".descricaoArea") as HTMLInputElement
 let novosCards: Array<Card> = []
 let btnCadastro = document.querySelector('.botaoCadastrar') as HTMLButtonElement
 
+// criação de uma classe Card com atributos e caracterísiticas que serão utilizadas.
 class Card {
     private nome: string;
     private descricao: string;
@@ -56,6 +59,7 @@ class Card {
     }
 }
 
+// criação da interface com as ações esperadas.
 interface apiTipagem {
     nome: string;
     descricao: string;
@@ -64,6 +68,7 @@ interface apiTipagem {
     id: string;
 }
 
+// função para acessar a API e retornar os dados para utilização nos cartões.
 function obterCards():void{
         fetch('https://62361b7feb166c26eb2f488a.mockapi.io/pacotes')
         .then(resposta=>resposta.json())
@@ -85,6 +90,7 @@ function obterCards():void{
 })
 }
 
+//função para inserir os dados nos cartões pelo usuário ().
 function criarCards() {
    
     inputNome.value;
@@ -100,6 +106,7 @@ function criarCards() {
     injetarDados(novosCards);
 }
 
+// função para criar Id do cartão.
 function criarId() {
     
     let maiorId: number = 0
@@ -112,6 +119,7 @@ function criarId() {
     return maiorId.toString()
 }
 
+//botão cadastrar, injetando no HTML.
 btnCadastro.addEventListener('click', () =>{criarCards()})
 
 function validacaoStatus(status:any){
@@ -124,6 +132,7 @@ function validacaoStatus(status:any){
     return status
 }
 
+//função para obter a data (dia, mês e ano)
 function dataTexto(data:string):string{
     let newDate = new Date(data)
     // console.log(newDate);
@@ -136,6 +145,8 @@ function dataTexto(data:string):string{
     return dataString
 }
 
+
+//função criada para injetar os dados dos cartões por array no HTML.
 function injetarDados(arrayNovosCards:any){
 
     let cardNovo = document.querySelector('.cardAPI') as HTMLElement
@@ -152,6 +163,7 @@ function injetarDados(arrayNovosCards:any){
     console.log(dataTexto(arrayNovosCards[0].data));
 }
 
+// função criada para editar os dados dos cartões.
 function editar(id:string){
     let indice:number
     indice = selecionarCardId(id)
@@ -163,6 +175,7 @@ function editar(id:string){
     injetarDados(novosCards)
 }
 
+//função criada para excluir os dados dos cartões.
 function excluir(id:string) {
     let indice: number
     indice = selecionarCardId(id)
@@ -170,6 +183,8 @@ function excluir(id:string) {
     injetarDados (novosCards);
 }
 
+
+//função criada para selecionar o cartão.
 function selecionarCardId(id:string):number {
     let indice: number = 0
     for (let i = 0; i < novosCards.length; i++) {
